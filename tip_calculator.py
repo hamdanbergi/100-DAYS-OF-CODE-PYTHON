@@ -2,8 +2,8 @@
 
 print("Welcome to the tip calculator")   #welcome message
 
-total_bill = int(input("What is the total bill?"))  #total bill
-tip_percent = int(input("How much would you like to tip (%)?")) # percent of bill to be tipped 
+total_bill = float(input("What is the total bill?"))  #total bill
+tip_percent = float(input("How much would you like to tip (%)?")) # percent of bill to be tipped 
 group_size = int(input(" How many people are paying?"))  #size of group that's dining
 
 bill_per_person = round((total_bill * (1 + (tip_percent / 100))) / group_size ,2 ) # calculation of total bill and rounding to 2 decimal points (or cents)
